@@ -1,5 +1,5 @@
 <div class="main-div">
-  <app-list/>
-  <app-list/>
-  <app-list/>
+  <ng-container *ngFor="let data of listData">
+    <app-list [fieldName]="data.fieldName" [value]="data.value"/>
+  </ng-container>
 </div>

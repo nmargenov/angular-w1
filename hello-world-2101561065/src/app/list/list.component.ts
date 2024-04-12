@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-list',
@@ -9,6 +9,11 @@ import { Component } from '@angular/core';
   styleUrl: './list.component.css'
 })
 export class ListComponent { 
+
+  @Input() fieldName!: String;
+  @Input() value!: String;
+
+
   isVisiable: boolean = false;
 
   onClick():void{
