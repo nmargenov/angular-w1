@@ -1,4 +1,4 @@
-<div class="list-div">
-    <h1 (click)="onClick()">{{fieldName}}</h1>
+<div (click)="onClick()" class="list-div">
+    <h1>{{fieldName}}</h1>
     <p *ngIf="isVisiable">{{value}}</p>
 </div>

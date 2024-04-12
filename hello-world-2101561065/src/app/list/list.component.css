@@ -1,4 +1,7 @@
 .list-div{
     width: 500px;
     text-align: center;
+    border: 2px solid black;
+    margin: 10px 0px;
+    cursor:pointer;
 }
